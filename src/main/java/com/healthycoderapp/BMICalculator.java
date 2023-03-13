@@ -14,6 +14,7 @@ public class BMICalculator {
 			return false;
 		return true;
 	}
+	//this is just a test
 
 	public static Coder findCoderWithWorstBMI(List<Coder> coders) {
 		return coders.stream().sorted(Comparator.comparing(BMICalculator::calculateBMI))
