@@ -52,6 +52,19 @@ class BMICalculatorTest {
 		assertThrows(ArithmeticException.class, executable);
 	}
 	
+	void should_ThrowArithmeticException_When_Height() {
+		
+		//arrange
+		double weight = 50;
+		double height = 0.0;
+		
+		//act
+		Executable executable = () -> BMICalculator.isDietRecommended(weight, height);
+		
+		//assert
+		assertThrows(ArithmeticException.class, executable);
+	}
+	
 	@Test
 	void should_ReturnCoderWithWorstBMI_When_CoderListNotEmpty() {
 		

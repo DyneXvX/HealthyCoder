@@ -7,6 +7,8 @@ public class BMICalculator {
 	
 	private static final double BMI_THRESHOLD = 25.0;
 
+	// this is if I need a diet.
+	
 	public static boolean isDietRecommended(double weight, double height) {
 		if (height == 0.0) throw new ArithmeticException();
 		double bmi = weight / (height * height);
